@@ -3,19 +3,20 @@
 /*==== 01 - Boilerplate: defining the base, abstract elements and mixins of our styles ====*/
 @import "./01-boilerplate/variables";
 
+@import "./01-boilerplate/mixins";
+
 @import "node_modules/@milo-css/base/src/base";
+@import "./01-boilerplate/base";
 
 /*==== Atomic Design Framework: Custom components and overrides of boilerplate where required ====*/
 /*==== 02 - Atoms: defining the basic physical building block HTML elements ====*/
-// @import "node_modules/@milo-css/typography/src/typography";
-// @import "./02-atoms/typography";
-
-//@import "node_modules/@milo-css/buttons/src/buttons";
-//@import "./02-atoms/buttons";
+@import "./02-atoms/typography";
+@import "./02-atoms/buttons";
 
 /*==== 03 - Molecules: atoms combined to form micro components ====*/
 
 /*==== 04 - Organisms: atoms & molecules combined to form complete components/modules ====*/
+@import "./04-organisms/course-card";
 
 /*==== 05 - Templates: organisms combined to form a generic ‘full page’ components ====*/
 

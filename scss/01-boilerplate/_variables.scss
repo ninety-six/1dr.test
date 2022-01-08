@@ -13,12 +13,14 @@ $base-font-weight:              300 !default;
 
 // Colours
 $colors: (
-    // Section Colours
+    // Brand Colours
+    "tangerine":                rgb(250, 110, 68),
     "mauve":                    rgb(170, 85, 108),
+    "lime":                     rgb(117, 166, 83),
     // Monochrome
     "white":                    rgb(255, 255, 255),
     "smoke":                    rgb(244, 244, 245),
-    "grey":                     rgb(183, 183, 183),
+    "grey":                     rgb(142, 142, 142),
     "charcoal":                 rgb(29, 36, 36),
     "black":                    rgb(0, 0, 0)
 ) !default;
@@ -26,9 +28,21 @@ $colors: (
 // Base Colors
 $body-background:               map-get($colors, "white") !default;
 $font-color:                    map-get($colors, "white") !default;
-$accent-color:                  map-get($colors, "mauve") !default;
+$accent-color:                  map-get($colors, "tangerine") !default;
+
+// Typography
+$strong-font-weight:            700 !default;
+$small-font-size:               1.3rem !default;
+
+$h3-font-size:                  1.875 * $base-font-size !default;
+$h3-font-weight:                $strong-font-weight !default;
+$h3-line-height:                1.2 !default;
+$h3-margin:                     0 0 1.5rem !default;
+
+$paragraph-margin-bottom:       1.5rem !default;
 
 // Miscellaneous
+$global-radius:                 .6rem !default;
 $animation-speed-fast:          500ms !default;
 $easing-default:                cubic-bezier(.22, 1, .36, 1) !default;  // easeOutQunit - Further easing options can be found at https://easings.net/
 
