@@ -10,13 +10,6 @@
     },
     "devDependencies": {
         "@milo-css/base": "^1.0.3",
-        "@milo-css/buttons": "^1.0.2",
-        "@milo-css/forms": "^1.0.2",
-        "@milo-css/grid": "^1.0.3",
-        "@milo-css/mixins": "^1.0.0",
-        "@milo-css/tables": "^1.0.1",
-        "@milo-css/typography": "^1.0.2",
-        "@milo-css/utilities": "^1.0.2",
         "autoprefixer": "^10.4.2",
         "clean-css-cli": "^5.5.0",
         "node-sass": "^7.0.1",
