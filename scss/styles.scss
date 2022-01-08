@@ -1,0 +1,26 @@
+/*==== This single SCSS output file is intended to ONLY @import other files. ====*/
+
+/*==== 01 - Boilerplate: defining the base, abstract elements and mixins of our styles ====*/
+@import "./01-boilerplate/fonts";
+@import "./01-boilerplate/variables";
+
+@import "./01-boilerplate/mixins";
+
+@import "node_modules/@milo-css/base/src/base";
+@import "./01-boilerplate/base";
+
+/*==== Atomic Design Framework: Custom components and overrides of boilerplate where required ====*/
+/*==== 02 - Atoms: defining the basic physical building block HTML elements ====*/
+@import "./02-atoms/typography";
+@import "./02-atoms/buttons";
+
+/*==== 03 - Molecules: atoms combined to form micro components ====*/
+
+/*==== 04 - Organisms: atoms & molecules combined to form complete components/modules ====*/
+@import "./04-organisms/course-card";
+
+/*==== 05 - Templates: organisms combined to form a generic ‘full page’ components ====*/
+
+/*==== 06 - Pages: specific, bespoke instances of templates ====*/
+
+/*==== 07 - Utilities ====*/

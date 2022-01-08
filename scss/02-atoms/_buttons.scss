@@ -1,0 +1,46 @@
+// Course Card
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;	// stylelint-disable-line property-no-vendor-prefix
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+// Default buttons style
+.button {
+    background-color: var(--accent-color);
+    border: .1rem solid var(--accent-color);
+    border-radius: $global-radius;
+    box-sizing: border-box;
+    color: var(--font-color);
+    cursor: pointer;
+    display: inline-block;
+    font-family: $header-font-family;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    overflow: visible;
+    padding: .9rem 3rem .7rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all $easing-default $animation-speed-fast;
+    user-select: none;
+    white-space: nowrap;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--font-color);
+            border-color: var(--font-color);
+            color: var(--accent-color);
+            outline: 0;
+        }
+    }
+}

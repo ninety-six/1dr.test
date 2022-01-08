@@ -1,0 +1,23 @@
+// Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+%h {
+    color: var(--font-color, $font-color);
+    font-family: $header-font-family;
+}
+
+h3,
+.h3 {
+    @extend %h;
+    font-size: $h3-font-size;
+    font-weight: $h3-font-weight;
+    line-height: $h3-line-height;
+    margin: $h3-margin;
+}
+
+p { margin-bottom: $paragraph-margin-bottom; }
+
+b,
+strong { font-weight: $strong-font-weight; }
+
+small { font-size: $small-font-size; }
