@@ -303,14 +303,41 @@ button,
 }
 
 .course-card__progress{
-  background-color:#8e8e8e;
+  align-items:center;
+  background-color:#171d1d;
+  display:flex;
+  flex-direction:column;
   -ms-grid-column:4;
   -ms-grid-column-span:1;
   grid-column:4 / span 1;
   -ms-grid-row:1;
   -ms-grid-row-span:4;
   grid-row:1 / span 4;
-  mix-blend-mode:multiply;
+  justify-content:center;
+}
+
+.course-card__progress svg{
+  margin-bottom:1.5rem;
+}
+
+.course-card__progress svg rect{
+  fill:transparent;
+}
+
+.course-card__progress svg #progress-bar{
+  stroke:var(--accent-color);
+  stroke-dasharray:488.2723 488.2723;
+  stroke-dashoffset:488.2723;
+  stroke-width:5px;
+  transform:rotate(-90deg);
+  transform-origin:center;
+}
+
+.course-card__progress span{
+  font-family:"Serifa", serif;
+  font-weight:500;
+  margin-bottom:0;
+  text-align:center;
 }
 
 @media (max-width: 1023px){

@@ -70,10 +70,37 @@
 }
 
 .course-card__progress {
-    background-color: color("grey");
+    align-items: center;
+    background-color: rgb(23, 29, 29);
+    display: flex;
+    flex-direction: column;
     grid-column: 4 / span 1;
     grid-row: 1 / span 4;
-    mix-blend-mode: multiply;
+    justify-content: center;
+
+    svg {
+        margin-bottom: 1.5rem;
+
+        rect {
+            fill: transparent;
+        }
+
+        #progress-bar {
+            stroke: var(--accent-color);
+            stroke-dasharray: 488.2723 488.2723;
+            stroke-dashoffset: 488.2723;
+            stroke-width: 5px;
+            transform: rotate(-90deg);
+            transform-origin: center;
+        }
+    }
+
+    span {
+        font-family: $header-font-family;
+        font-weight: 500;
+        margin-bottom: 0;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1023px) {
