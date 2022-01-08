@@ -1,98 +1,43 @@
 // Variables
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Base
-$base-font-family:              "Helvetica Neue", helvetica, arial, sans-serif !default;
+// Prevent horizontal scroll of <body> element
+$body-overflow-x-hidden:        true !default;
+
+// Base Font
+$base-font-family:              "Open Sans", sans-serif !default;
 $header-font-family:            "brandon-grotesque", arial, helvetica, sans-serif !default;
-$base-font-size:                14px !default;
-$base-line-height:              1.45 !default;
-
-$lead-font-weight:              400 !default;
-
-// Grid
-$container-columns:             12 !default;
-$container-gutter-width:        16px !default;
-
-// The font sizes for h1-h6
-$h1-font-size:                  4.5rem !default;
-$h2-font-size:                  4.4rem !default;
-$h3-font-size:                  2.2rem !default;
-$h4-font-size:                  1.6rem !default;
-
-$heading-font-weight:           800 !default;
-
-$heading-margin:                0 0 1.6rem !default;
-
-$h1-margin:                     0 0 4.8rem !default;
-$h2-margin:                     0 0 4.8rem !default;
-
-$h2-line-height:                1.2 !default;
-$h3-line-height:                1.2 !default;
-$h4-line-height:                1.375 !default;
-
-$generic-margin-bottom:         1.6rem !default;  // used as a starting point for other variables applied to elements
+$base-font-size:                16px !default;
+$base-line-height:              1.4375 !default;
+$base-font-weight:              300 !default;
 
 // Colours
 $colors: (
-    "primary":                  rgb(0, 159, 227),
-    "secondary":                rgb(235, 0, 139),
-    "tertiary":                 rgb(247, 166, 0),
-    "quaternary":               rgb(149, 193, 31),
-    "quinary":                  rgb(130, 54, 140),
+    // Section Colours
+    "mauve":                    rgb(170, 85, 108),
+    // Monochrome
     "white":                    rgb(255, 255, 255),
     "smoke":                    rgb(244, 244, 245),
     "grey":                     rgb(183, 183, 183),
+    "charcoal":                 rgb(29, 36, 36),
     "black":                    rgb(0, 0, 0)
 ) !default;
 
-
 // Base Colors
-$font-color:                    map-get($colors, "black") !default;
-$header-font-color:             map-get($colors, "black") !default;
-
-// Mark
-$mark-font-color:               map-get($colors, "white") !default;
-
-// Borders
-$border-color:                  map-get($colors, "black") !default;
+$body-background:               map-get($colors, "white") !default;
+$font-color:                    map-get($colors, "white") !default;
+$accent-color:                  map-get($colors, "mauve") !default;
 
 // Miscellaneous
-$global-radius:                 0 !default;
-$animation-speed-fast:          250ms !default;
-$easing-default:                cubic-bezier(.25, .46, .45, .94) !default;  // easeOutQuad - Further easing options can be found at https://easings.net/
+$animation-speed-fast:          500ms !default;
+$easing-default:                cubic-bezier(.22, 1, .36, 1) !default;  // easeOutQunit - Further easing options can be found at https://easings.net/
 
-// Links
-$link-color:                    map-get($colors, "black") !default;
-$link-color-hover:              map-get($colors, "primary") !default;
-$link-decoration:               underline !default;
-$link-decoration-hover:         underline !default;
 
-// Lists
-$ul-list-style:                 disc outside !default;
-$ul-list-item-spacing:          .8rem !default;
-$ol-list-item-spacing:          .8rem !default;
+// CSS Custom Properties/Variables
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Buttons
-$buttons: (
-    "primary":                  map-get($colors, "primary")     map-get($colors, "white"),
-    "secondary":                map-get($colors, "secondary")   map-get($colors, "white"),
-    "tertiary":                 map-get($colors, "tertiary")    map-get($colors, "white")
-) !default;
-
-$button-font-size:              1.8rem !default;
-$button-font-weight:            800 !default;
-$button-padding-y:              .8rem !default;
-$button-padding-x:              2rem !default;
-$button-transition:             background $easing-default $animation-speed-fast !default;
-
-// The below applies to the default button class only `.button`
-$button-default-bg-color:       map-get($colors, "black") !default;
-$button-default-font-color:     map-get($colors, "white") !default;
-
-// Forms
-$input-border-color:            map-get($colors, "grey") !default;
-$input-font-size:               1.6rem !default;
-$input-placeholder-color:       $font-color !default;
-
-// Spacing
-$base-spacer:                   1.6rem !default;
+:root {
+    --base-font-size: #{$base-font-size};
+    --font-color: #{$font-color};
+    --accent-color: #{$accent-color};
+}

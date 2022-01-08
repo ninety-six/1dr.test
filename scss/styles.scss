@@ -3,37 +3,17 @@
 /*==== 01 - Boilerplate: defining the base, abstract elements and mixins of our styles ====*/
 @import "./01-boilerplate/variables";
 
-//@import "node_modules/@milo-css/mixins/centerer";
-//@import "node_modules/@milo-css/mixins/clearfix";
-//@import "node_modules/@milo-css/mixins/color";
-//@import "node_modules/@milo-css/mixins/gradient";
-//@import "node_modules/@milo-css/mixins/grid";
-//@import "node_modules/@milo-css/mixins/image";
-//@import "node_modules/@milo-css/mixins/margin";
-//@import "node_modules/@milo-css/mixins/padding";
-//@import "node_modules/@milo-css/mixins/position";
-//@import "node_modules/@milo-css/mixins/pseudo";
-//@import "node_modules/@milo-css/mixins/ratio";
-//@import "node_modules/@milo-css/mixins/shapes";
-//@import "node_modules/@milo-css/mixins/z-index";
-
 @import "node_modules/@milo-css/base/src/base";
-@import "node_modules/@milo-css/grid/src/grid";
 
 /*==== Atomic Design Framework: Custom components and overrides of boilerplate where required ====*/
 /*==== 02 - Atoms: defining the basic physical building block HTML elements ====*/
-@import "node_modules/@milo-css/typography/src/typography";
-@import "./02-atoms/typography";
+// @import "node_modules/@milo-css/typography/src/typography";
+// @import "./02-atoms/typography";
 
 //@import "node_modules/@milo-css/buttons/src/buttons";
 //@import "./02-atoms/buttons";
 
 /*==== 03 - Molecules: atoms combined to form micro components ====*/
-//@import "node_modules/@milo-css/forms/src/forms";
-//@import "./03-molecules/forms";
-
-//@import "node_modules/@milo-css/tables/src/tables";
-//@import "./03-molecules/forms";
 
 /*==== 04 - Organisms: atoms & molecules combined to form complete components/modules ====*/
 
@@ -42,17 +22,3 @@
 /*==== 06 - Pages: specific, bespoke instances of templates ====*/
 
 /*==== 07 - Utilities ====*/
-//@import "node_modules/@milo-css/utilities/clearfix";
-//@import "node_modules/@milo-css/utilities/color";
-//@import "node_modules/@milo-css/utilities/display";
-//@import "node_modules/@milo-css/utilities/flex";
-//@import "node_modules/@milo-css/utilities/float";
-//@import "node_modules/@milo-css/utilities/grid";
-//@import "node_modules/@milo-css/utilities/image";
-//@import "node_modules/@milo-css/utilities/list";
-//@import "node_modules/@milo-css/utilities/overflow";
-//@import "node_modules/@milo-css/utilities/position";
-//@import "node_modules/@milo-css/utilities/sizing";
-//@import "node_modules/@milo-css/utilities/spacing";
-//@import "node_modules/@milo-css/utilities/text";
-//@import "node_modules/@milo-css/utilities/visibility";

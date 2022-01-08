@@ -1,0 +1,36 @@
+@charset "UTF-8";
+:root{
+  --base-font-size:16px;
+  --font-color:white;
+  --accent-color:#aa556c;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+*::before, *::after{
+  box-sizing:border-box;
+}
+
+html{
+  font-size:62.5%;
+  line-height:1.4375;
+}
+
+body{
+  background:var(--body-background, white);
+  color:var(--font-color, white);
+  font-family:"Open Sans", sans-serif;
+  font-size:var(--base-font-size, 16px);
+  font-weight:300;
+  overflow-x:hidden;
+  position:relative;
+}
+
+main{
+  display:block;
+}
+/*# sourceMappingURL=styles.css.map */
