@@ -9,18 +9,15 @@ let percent = document.querySelector('.course-card__progress').dataset.percentag
 if(progressPath){
     window.onload = () => {
         progressPath.animate([
-            // keyframes
             {
                 strokeDasharray: pathLength + ' ' + pathLength,
                 strokeDashoffset: pathLength
             },
             { strokeDashoffset: pathLength * ((100 - percent) / 100) }
         ], {
-            // timing options
             duration: 1000,
             easing: 'ease-in-out',
             iterations: 1,
-            direction: 'alternate',
             fill: 'forwards'
         });
     };
