@@ -45,6 +45,7 @@
 .course-card__meta {
     align-items: center;
     display: flex;
+    font-family: $header-font-family;
     grid-row: 3 / span 1;
 
     > div {

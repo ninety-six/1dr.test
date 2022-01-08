@@ -22,9 +22,9 @@ button,
     color: var(--font-color);
     cursor: pointer;
     display: inline-block;
-    font-family: inherit;
+    font-family: $header-font-family;
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.5;
     overflow: visible;
     padding: .9rem 3rem .7rem;

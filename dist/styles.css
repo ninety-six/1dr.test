@@ -1,4 +1,57 @@
 @charset "UTF-8";
+@font-face{
+  font-display:swap;
+  font-family:'Reader Light';
+  font-stretch:normal;
+  font-style:normal;
+  font-weight:300;
+  src:url("reader-light.woff2") format("woff2");
+}
+@font-face{
+  font-display:swap;
+  font-family:'Serifa';
+  font-stretch:normal;
+  font-style:normal;
+  font-weight:400;
+}
+@font-face{
+  font-display:swap;
+  font-family:'Serifa';
+  font-stretch:normal;
+  font-style:normal;
+  font-weight:500;
+}
+@font-face{
+  font-display:swap;
+  font-family:'Serifa';
+  font-stretch:normal;
+  font-style:normal;
+  font-weight:700;
+}
+.font-reader{
+  font-family:'Reader Light';
+}
+
+.font-serifa{
+  font-family:'Serifa';
+}
+
+.font-light{
+  font-weight:300;
+}
+
+.font-normal{
+  font-weight:400;
+}
+
+.font-medium{
+  font-weight:500;
+}
+
+.font-bold{
+  font-weight:700;
+}
+
 :root{
   --base-font-size:16px;
   --font-color:white;
@@ -23,7 +76,7 @@ html{
 body{
   background:var(--body-background, white);
   color:var(--font-color, white);
-  font-family:"Open Sans", sans-serif;
+  font-family:"Reader Light", sans-serif;
   font-size:var(--base-font-size, 16px);
   font-weight:300;
   overflow-x:hidden;
@@ -40,7 +93,7 @@ main{
 h3,
 .h3{
   color:var(--font-color, white);
-  font-family:"brandon-grotesque", arial, helvetica, sans-serif;
+  font-family:"Serifa", serif;
 }
 
 h3,
@@ -84,9 +137,9 @@ button,
   color:var(--font-color);
   cursor:pointer;
   display:inline-block;
-  font-family:inherit;
+  font-family:"Serifa", serif;
   font-size:1.4rem;
-  font-weight:300;
+  font-weight:500;
   line-height:1.5;
   overflow:visible;
   padding:.9rem 3rem .7rem;
@@ -222,6 +275,7 @@ button,
 .course-card__meta{
   align-items:center;
   display:flex;
+  font-family:"Serifa", serif;
   -ms-grid-row:3;
   -ms-grid-row-span:1;
   grid-row:3 / span 1;

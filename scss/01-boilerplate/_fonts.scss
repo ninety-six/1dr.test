@@ -1,0 +1,64 @@
+// Fonts
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+/* Reader Light */
+@font-face {
+    font-display: swap;
+    font-family: 'Reader Light';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 300;
+    src: url('reader-light.woff2') format('woff2');
+}
+
+/* Serifa Regular */
+@font-face {
+    font-display: swap;
+    font-family: 'Serifa';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Serifa Regular */
+@font-face {
+    font-display: swap;
+    font-family: 'Serifa';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Serifa Bold */
+@font-face {
+    font-display: swap;
+    font-family: 'Serifa';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Utility Classes */
+.font-reader {
+    font-family: 'Reader Light';
+}
+
+.font-serifa {
+    font-family: 'Serifa';
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}

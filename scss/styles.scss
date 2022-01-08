@@ -1,6 +1,7 @@
 /*==== This single SCSS output file is intended to ONLY @import other files. ====*/
 
 /*==== 01 - Boilerplate: defining the base, abstract elements and mixins of our styles ====*/
+@import "./01-boilerplate/fonts";
 @import "./01-boilerplate/variables";
 
 @import "./01-boilerplate/mixins";
