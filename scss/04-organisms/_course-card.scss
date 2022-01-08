@@ -75,3 +75,48 @@
     grid-row: 1 / span 4;
     mix-blend-mode: multiply;
 }
+
+@media (max-width: 1023px) {
+    .course-card {
+        grid-template-columns: 3rem auto 3rem 32rem;
+        grid-template-rows: 3rem 22.5rem 2rem 3rem;
+    }
+
+    .course-card__desc p {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .course-card {
+        grid-template-columns: 2rem auto 2rem 50%;
+        grid-template-rows: 2rem auto auto 2rem;
+    }
+
+    .course-card__desc .button {
+        margin-bottom: 2rem;
+    }
+
+    .course-card__meta {
+        align-items: flex-start;
+        flex-direction: column;
+
+        > div:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .course-card {
+        grid-template-columns: 2rem auto 2rem;
+        grid-template-rows: 2rem auto auto 2rem auto;
+    }
+
+    .course-card__progress {
+        grid-column: 1 / span 3;
+        grid-row: 5 / span 1;
+        padding: 2rem;
+    }
+}
